@@ -12,7 +12,12 @@
       <!-- This property will be set by the Maven Dependency plugin -->
       <annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>
   </properties>
-
+	<distributionManagement>
+        <repository>
+            <id>nexus-site</id>
+            <url>http://192.168.80.143:8081</url>
+        </repository>
+    </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
